@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nesta frase, temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica). A tag STRONG, por ser semântica, possui forma e funcionalidade.</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica).
+    </p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <!--ctrl + shift + P to wrap in abbreviation - enter + type your tag-->
+    <h2>Marca-texto</h2>
+    <p>Nesta frase, temos um <mark>termo destacado</mark> com uma espécie de marca texto usando a tag MARK. Podemos mudar a cor da caneta com as CSS.</p>
+    <p>Para mudarnos a cor da marcação basta usarmos o parâmetro CSS "style" dentro da tag HTML. Exemplo:
+        <br> <mark style="background-color: #f5b7ff;">Aqui temos um texto marcado usando a tag HTML MARK, e modificado com o parâmetro CSS STYLE</mark>
+        <br>Isso mudará a cor apenas do marcador em questão. Se quisermos que todas as marcações de texto da nossa página fiquem em uma outra cor que não a padrão, precisamos fazer essa alteração com CSS na tag STYLE do documento como um todo. <!-- teríamos que usar  
+        <style> 
+            mark {
+            background-color: limegreen;
+            }
+        </style>-->
+    </p>
+    <h2>Texto deletado</h2>
+    <p>No HTML4, existia a tag STRIKE (não semântica) para riscar a parte de um texto. Essa tag está obsoleta. Agora usamos a tag DEL, que tem o significado de "desconsidere esse texto". <del>Este é um exemplo de resultado da tag.</del></p>
+    <h2>Texto Inserido</h2>
+    <p>A tag INS é o oposto da tag DEL, significa que o texto foi inserido ali e merece especial atenção do leitor. Visualmente tem o mesmo efeito da tag obsoleta U (não semântica), que gerava texto sublinhado. <ins>Isso é o que faz a tag INS.</ins></p>
+    <h2>Texto sobrescrito e subscrito</h2>
+    <p>No HTML, também temos como sobrescrever (tag SUP) ou subscrever um texto (tag SUB). Exemplos: Y<sup>3</sup>; X<sub>2</sub>;</p>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>A tag OL marca uma lista ordenada, ou seja, com uma ordem lógica. Os itens da lista devem ser marcados com a tag LI</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ol>
+    <p>As listas ordenadas não precisam ser iniciadas apenas por números. Ao usar o parâmetro TYPE podemos decicidir entre algarismos comuns ou romanos, letras maiúsculas ou minúsculas.</p>
+    <ol type="I">
+        <li>Estudar</li>
+        <li>Comer</li>
+        <li>Correr</li>
+    </ol>
+    <p>Você também pode indicar o início da contagem usando o parâmetro start.
+        Por exemplo, o parâmetro type=“I” start = “5” vai gerar itens numerados como V, VI, VII, VIII, IX,
+        <ol type="I" start="5">
+            <li>Trigo</li>
+            <li>Pão</li>
+            <li>Queijo</li>
+            <li>Tomate</li>
+        </ol>
+    </p> 
+    <h2>Listas não ordenadas</h2>
+    <p>Listas não ordenadas são aquelas que não apresentam uma sequência lógica determinada. É apenas uma listagem de itens em ordem aleatória. A tag para esse tipo de lista é UL e os itens dentro dela usam a mesma tag de OL, ou seja, LI. Ao usar o parâmetro TYPE podemos mudar o símbolo que aparece antes dos itens da lista. As opções são disc, circle e square.</p>
+    <ul>
+        <li>Trigo</li>
+        <li>Pão</li>
+        <li>Queijo</li>
+        <li>Tomate</li>
+    </ul>
+    <ul type="square">
+        <li>Trigo</li>
+        <li>Pão</li>
+        <li>Queijo</li>
+        <li>Tomate</li>
+    </ul>
+    <h2>Juntando Listas</h2>
+    <h3>Minhas Linguages Favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Meus Jogos Favoritos</h3>
+        <ol>
+            <li>NES</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                <ul type="circle">
+                    <li>Mario Bros 3</li>
+                    <li>Mario: Lost Levels</li>
+                </ul>
+                <li>Ninja Gaiden</li>
+            </ul>
+            <li>SNES</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donkey Kong</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="square">
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+        </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcações para a criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação de design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.xc</dd>
+    </dl>
+</body>
+</html>

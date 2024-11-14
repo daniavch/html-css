@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--tela pequena-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--tela média-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!--tela grande-->
+        <!--as tags de media source PRECISAM estar em ordem crescente de acordo com o tamanho-->
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/burlesque-national-sweetheart.mp3" controls autoplay></audio> <!--formatos compatíveis MP3, WAV, OGG. Evite WAV, pois é muito pesado-->
+    <!--outra maneira (melhor) de inserir áudios:-->
+    <audio preload="metadata" autoplay controls> <!--auto não é uma boa opção de preload pois só considera o site carregado após carregar todo o áudio. Se o áudio for longo, isso é um desastre para o seu site-->
+        <source src="midia/burlesque-national-sweetheart.mp3" type="audio/mpeg">
+        <!--se eu tives meu áudio em outros formatos poderia colocá-los assim:-->
+        <source src="midia/burlesque-national-sweetheart.ogg" type="audio/ogg">
+        <source src="midia/burlesque-national-sweetheart.wav" type="audio/wav">
+        <!--Caso o navegador do usuário não consiga reproduzir nenhum formato ele receberá a mensagem:-->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/burlesque-national-sweetheart.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+
+    </audio>
+</body>
+</html>

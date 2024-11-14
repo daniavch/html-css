@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="coloque uma thumb aqui" controls>
+        <source src="midia/2024-06-26 18-55-16.mp4" width="500" controls>
+        <!--melhor opção é colocar vários formatos de vídeo-->
+        <source src="midia/2024-06-26 18-55-16.mp4" type="video/mp4">
+        <source src="midia/2024-06-26 18-55-16.webm" type="video/webm">
+        <source src="midia/2024-06-26 18-55-16.ogv" type="video/ogg">
+        <source src="midia/2024-06-26 18-55-16.m4v" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p> <!--caso o navegador não consiga reproduzir nenhum dos formatos-->
+        <!--hospedagem local gasta MUITA bada. Prefira sempre hospedagem externa. Use a local apenas se for exigência do cliente-->
+    </video>
+    <h1>Inserindo vídeos de hospedagem externa</h1>
+    <h2>Vídeo no YouTube</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/42PE9H34WwI?si=-d1ouFVW91pD539U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--O VIMEO é a melhor opção para quem precisa incorporar vídeos privados. Com uma assinatura você pode deixar o seu vídeo disponível apenas onde você colocá-lo. No YouTube, um vídeo não listado só não aparece na pesquisa, mas pode ser incorporado em outros sites. -->
+</body>
+</html>

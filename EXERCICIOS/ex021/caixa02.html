@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        header {
+            background-color: #ffd630;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: blanchedalmond;
+            padding: 10px;
+            margin-right: 100px;
+            box-shadow: 2px 1px 3px #00000042;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            /*essa é uma shorthand de:
+                border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+*/
+            box-shadow: 2px 1px 2px #00000042;
+        }
+
+        article {
+            background-color: bisque;
+        }
+
+        article > aside {
+            background-color: #bbbbbb;
+        }
+
+        footer {
+            background-color: #454545af;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="http://">Link 1</a>
+            <a href="http://">Link 2</a>
+            <a href="http://">Link 3</a>
+            <a href="http://">Link 4</a>
+            <a href="http://">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <p>Política e Cultura</p>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus doloribus id labore sunt maiores rerum quod aliquid nemo, nesciunt repellat! Laborum necessitatibus itaque laboriosam impedit ullam cupiditate sequi labore ab?</p>
+                <aside>
+                    <p>Artigo por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Merricat</p>
+    </footer>
+</body>
+</html>
